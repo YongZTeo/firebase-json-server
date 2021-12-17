@@ -1,11 +1,17 @@
 {
-  "hosting": {
-    "public": "public",
+  "hosting": [{
+    "target": "fjs-dir",
+    "public": "fjs-dir",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
-        "function": "main"
+        "function": "jsonserver"
       }
     ]
-  }
+  }]
 }

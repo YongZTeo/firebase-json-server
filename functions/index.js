@@ -33,4 +33,4 @@ api.use(router)
 
 main.use('/api', api)
 
-exports.main = functions.https.onRequest(main)
+exports.jsonserver = functions.https.onRequest(main)
